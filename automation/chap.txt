@@ -1,0 +1,21 @@
+[
+    "0. Intro Gates",
+    "1. At the Crossroads",
+    "2. Corner of 0s and 1s",
+    "3. Loop Tunnel",
+    "4. List Forest Edge",
+    "5. Labyrinth of Nested Loops",
+    "6. Book Market",
+    "7. Mirror Lake",
+    "8. Well of Integration",
+    "9. Lab of Transformations",
+    "10. Spring of Integration",
+    "11. List Backwoods",
+    "12. Waterfall of Integration",
+    "13. Sorting Outpost",
+    "14. Chess Tavern",
+    "15. Time River",
+    "16. Regular Hell",
+    "17. Secret Archives",
+    "18. Cliffs of Pain"
+]

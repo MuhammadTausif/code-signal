@@ -1,0 +1,10 @@
+43
+isBeautifulString
+44
+Find Email Domain
+45
+buildPalindrome
+46
+Elections Winners
+47
+Is MAC48 Address

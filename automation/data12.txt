@@ -1,0 +1,18 @@
+52
+longestWord
+53
+Valid Time
+54
+sumUpNumbers
+55
+Different Squares
+56
+digitsProduct
+57
+File Naming
+58
+messageFromBinaryCode
+59
+spiralNumbers
+60
+Sudoku
