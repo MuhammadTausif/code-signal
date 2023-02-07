@@ -85,8 +85,8 @@ s40 = lambda i: re.findall('^\d*', i)[0]
 def s41(m, d = 0):
     while len(str(sum(list(map(int, str(m)))))) > 1: m = str(sum(list(map(int, str(m))))); d =d + 1
     return d
-# 42.9
-
+# 42.9*
+s42 = lambda b, p: abs(ord(b[0]) - ord(p[0])) == abs(ord(b[1]) - ord(p[1]))
 # 43.10
 
 # 44
