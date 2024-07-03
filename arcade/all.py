@@ -38,42 +38,42 @@ s16 = lambda A, B: sorted(A) == sorted(B) and sum([a != b for a, b in zip(A, B)]
 
 # 19.5
 
-# 20
-
+# 20.5*
+s20 = lambda a: max([abs(a[i]-a[i+1]) for i in range(len(a)-1)])
 # 21.5
-s21 = lambda s: len(s.split('.')) and all([n.isdigit() and 0 <= int(n) < 256 for n in s.split('.')])
-# 22
-
+s21 = lambda s: len(s.split('.')) == 4 and all([n.isdigit() and 0 <= int(n) < 256 for n in s.split('.')])
+# 22.5*
+s22 = lambda ia: min([i for i in range(2, max(ia)+2) if all([j%i!=0 for j in ia])])
 # 23.5*
 s23 = lambda image: [[int(sum(sum(x[i:i + 3]) for x in image[j:j + 3]) / 9) for i in range(len(image[j]) - 2)] for j in
                      range(len(image) - 2)]
-# 24
+# 24.5
 
-# 25
+# 25.6*
+s25 = lambda i, e, s: [x if x != e else s for x in i]
+# 26.6*
+s26 = lambda n: all(int(d) % 2 == 0 for d in str(n))
+# 27.6*
+s27 = lambda n: n.isidentifier()
+# 28.6*
+s28 = lambda s: "".join(chr((ord(i)-96)%26+97) for i in s)
+# 29.6*
+s29 = lambda c1, c2: (ord(c1[0])+int(c1[1])+ord(c2[0])+int(c2[1])) % 2 == 0
+# 30.7*
+s30 = lambda n, fn: (fn + n/2) % n
+# 31.7*
+s31 = lambda d, r, t: math.ceil(math.log(t/d, 1+r/100))
+# 32.7*
+s32 = lambda a: a[(len(a)-1)//2]
+# 33.7*
 
-# 26
+# 34.8*
+s34_8 = lambda ia, k: [i for (n,i) in enumerate(ia) if (n+1) % k != 0]
+# 35.8*
 
-# 27
-
-# 28
-
-# 29
-
-# 30
-
-# 31
-
-# 32
-
-# 33
-
-# 34
-
-# 35
-
-# 36
-
-# 37
+# 36.8*
+s36_8 = 1
+# 37.8*
 
 # 38.9*
 s38 = lambda upSpeed, downSpeed, desiredHeight: 1 if desiredHeight <= upSpeed else (desiredHeight - upSpeed - 1) // ( upSpeed - downSpeed) + 2
@@ -97,16 +97,16 @@ s42 = lambda b, p: abs(ord(b[0]) - ord(p[0])) == abs(ord(b[1]) - ord(p[1]))
 
 # 47
 
-# 48
-
+# 48.11
+s48 = lambda s: s.isdigit()
 # 49
 
 # 50
 
-# 51
-
-# 52
-
+# 51.11*
+s51 = lambda n: max([int(str(n)[:i] + str(n)[i+1:]) for i in range(len(str(n)))])
+# 52.12*
+s52 = lambda text: max(re.split('[^a-zA-Z]', text), key=len)
 # 53
 
 # 54
