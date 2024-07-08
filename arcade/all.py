@@ -36,6 +36,12 @@ s15 = lambda p: ["*" * (len(p[0]) + 2)] + ["*" + i + "*" for i in p] + ["*" * (l
 # 16.4*
 s16 = lambda A, B: sorted(A) == sorted(B) and sum([a != b for a, b in zip(A, B)]) <= 2
 # 17.4
+def solution17(inputArray):
+    k = [inputArray[0]]
+    for i in range(1, len(inputArray)):
+        h = max(inputArray[i], inputArray[i - 1] + 1, k[i - 1] + 1)
+        k.append(h)
+    return sum(k) - sum(inputArray)
 
 # 18.4
 
