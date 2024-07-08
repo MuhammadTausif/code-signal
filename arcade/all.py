@@ -23,6 +23,9 @@ s10 = lambda s1, s2: sum([min(s1.count(i), s2.count(i)) for i in set(s1)])
 # 11.3
 s11 = lambda n: sum(list(map(int, str(n)[:int(len(str(n)) // 2)]))) == sum(list(map(int, str(n)[int(len(str(n)) // 2):])))
 # 12.3
+def solution12(a):
+    people = sorted(filter(lambda x: x != -1, a))
+    return [people.pop(0) if i != -1 else -1 for i in a]
 
 # 13.3*
 s13 = lambda s: eval('"' + s.replace('(', '"+("').replace(')', '")[::-1]+"') + '"')
